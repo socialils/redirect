@@ -8,9 +8,8 @@
       const params = new URLSearchParams(window.location.search);
       const target = params.get("target");
       if (target) {
-        const decoded = decodeURIComponent(target);
-        document.getElementById("link").href = decoded;
-        window.location.replace(decoded);
+        document.getElementById("link").href = target;
+        window.location.replace(target);
       }
     });
   </script>
